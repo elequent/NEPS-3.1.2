@@ -1,0 +1,2 @@
+The uplink program is developed to automatically extract the irrigation and rainfall data from Aqualink and calculate the water amount applied at each irrigation set of the configured farm. Aqualink is the software built in to the WiSA automated irrigation system.
+A .dat file that contains 7-day irrigation and rainfall data will be uploaded to an FTP server which connects to IrrigWeb (The decision support tool). IrrigWeb server will then update the irrigation and rainfall data for each irrigation set hourly.
