@@ -1,0 +1,93 @@
+[Site Key]
+Site Key=81
+
+[Farm Information]
+Computer Name=Aaron
+No. Hydro Group=3
+DateTime Format=H:mm:ss
+
+[Historical Data]
+Enable=0
+Start Date=8/02/2018 7:18:18 PM
+End Date=22/02/2018 7:18:18 PM
+
+[Rain Gauge]
+Has Rain Gauge=1
+Rain Gauge Name=Aaron's Shed
+Rain Gauge ID=119
+
+[Update Interval]
+Update Interval=300
+
+[Irrigation Interval]
+Irrigation Interval=300
+
+[Preferred Time]
+Weekdays=9:00 PM-7:00 AM
+Weekends=12:00 AM-11:59 PM
+
+[Hydr Group B]
+Hydr Grp ID=B
+Farm Name=Aaron's Farm
+Irrig Type=Drip
+No. Pump=1
+Pump ID=14
+No. Flow Meter=1
+Flow Meter ID=4
+No. Moisture Probe=0
+No. Set=4
+Set ID=11
+Max Runtime=0
+Set ID=12
+Max Runtime=0
+Set ID=13
+Max Runtime=0
+Set ID=75
+Max Runtime=0
+
+[Hydr Group C]
+Hydr Grp ID=C
+Farm Name=Aaron's Farm
+Irrig Type=Furrow
+No. Pump=1
+Pump ID=104
+No. Flow Meter=1
+Flow Meter ID=125
+No. Moisture Probe=1
+Moisture Probe ID=115
+No. Set=9
+Set ID=90
+Max Runtime=10
+Set ID=91
+Max Runtime=10
+Set ID=102
+Max Runtime=10
+Set ID=81
+Max Runtime=10
+Set ID=82
+Max Runtime=10
+Set ID=94
+Max Runtime=10
+Set ID=95
+Max Runtime=10
+Set ID=98
+Max Runtime=10
+Set ID=99
+Max Runtime=10
+
+[Hydr Group D]
+Hydr Grp ID=D
+Farm Name=Aaron's Farm
+Irrig Type=Furrow
+No. Pump=1
+Pump ID=106
+No. Flow Meter=1
+Flow Meter ID=124
+No. Moisture Probe=1
+Moisture Probe ID=122
+No. Set=2
+Set ID=86
+Max Runtime=6
+Set ID=87
+Max Runtime=6
+
