@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Uplink Config")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Uplink Config")>
+<Assembly: AssemblyTitle("Config V1.0")>
+<Assembly: AssemblyDescription("Configuration program for Uplink")>
+<Assembly: AssemblyCompany("James Cook University")>
+<Assembly: AssemblyProduct("Config V1.0")>
 <Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
 

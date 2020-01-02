@@ -7,7 +7,7 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Config.exe.manifest" size="3991">
+    <dependentAssembly dependencyType="install" codebase="Config.exe.manifest" size="3993">
       <assemblyIdentity name="Config.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
     </dependentAssembly>
   </dependency>

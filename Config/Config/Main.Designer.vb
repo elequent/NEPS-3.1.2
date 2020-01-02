@@ -24,10 +24,11 @@ Partial Class Main
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.DateFormatBox = New System.Windows.Forms.TextBox()
         Me.UserID = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.DateFormatBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PCName = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -37,6 +38,8 @@ Partial Class Main
         Me.Label25 = New System.Windows.Forms.Label()
         Me.MaxRunText = New System.Windows.Forms.TextBox()
         Me.FarmName = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -62,8 +65,6 @@ Partial Class Main
         Me.Label20 = New System.Windows.Forms.Label()
         Me.RainName = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.UplinkStop = New System.Windows.Forms.Button()
-        Me.UplinkRun = New System.Windows.Forms.Button()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.UploadInterval = New System.Windows.Forms.TextBox()
@@ -75,11 +76,8 @@ Partial Class Main
         Me.Label22 = New System.Windows.Forms.Label()
         Me.HisCheckBox = New System.Windows.Forms.CheckBox()
         Me.RainGaugeCheckBox = New System.Windows.Forms.CheckBox()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.DownlinkStop = New System.Windows.Forms.Button()
-        Me.DownlinkRun = New System.Windows.Forms.Button()
+        Me.UplinkStop = New System.Windows.Forms.Button()
+        Me.UplinkRun = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -94,27 +92,24 @@ Partial Class Main
         Me.Update = New System.Windows.Forms.Button()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout
-        Me.Panel3.SuspendLayout
-        Me.Panel6.SuspendLayout
-        Me.TabControl1.SuspendLayout
-        Me.TabPage1.SuspendLayout
-        Me.Panel2.SuspendLayout
-        Me.Panel5.SuspendLayout
-        Me.TabPage2.SuspendLayout
-        Me.StatusStrip1.SuspendLayout
-        Me.SuspendLayout
+        Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
+        Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label13)
-        Me.Panel1.Controls.Add(Me.DateFormatBox)
         Me.Panel1.Controls.Add(Me.UserID)
         Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.DateFormatBox)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PCName)
         Me.Panel1.Location = New System.Drawing.Point(16, 13)
@@ -123,29 +118,29 @@ Partial Class Main
         Me.Panel1.Size = New System.Drawing.Size(553, 47)
         Me.Panel1.TabIndex = 15
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(484, 12)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(30, 23)
+        Me.Button1.TabIndex = 33
+        Me.Button1.Text = "T"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Label13
         '
-        Me.Label13.AutoSize = true
-        Me.Label13.Enabled = false
-        Me.Label13.Location = New System.Drawing.Point(123, 14)
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(341, 15)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(80, 14)
+        Me.Label13.Size = New System.Drawing.Size(37, 14)
         Me.Label13.TabIndex = 13
-        Me.Label13.Text = "TimeFormat"
-        '
-        'DateFormatBox
-        '
-        Me.DateFormatBox.Location = New System.Drawing.Point(206, 11)
-        Me.DateFormatBox.Margin = New System.Windows.Forms.Padding(4)
-        Me.DateFormatBox.Name = "DateFormatBox"
-        Me.DateFormatBox.Size = New System.Drawing.Size(90, 20)
-        Me.DateFormatBox.TabIndex = 14
-        Me.DateFormatBox.Text = "h:mm:ss tt"
+        Me.Label13.Text = "Time"
         '
         'UserID
         '
-        Me.UserID.Location = New System.Drawing.Point(68, 11)
+        Me.UserID.Location = New System.Drawing.Point(55, 11)
         Me.UserID.Margin = New System.Windows.Forms.Padding(4)
         Me.UserID.Name = "UserID"
         Me.UserID.Size = New System.Drawing.Size(41, 20)
@@ -153,7 +148,7 @@ Partial Class Main
         '
         'Label1
         '
-        Me.Label1.AutoSize = true
+        Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(4, 14)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
@@ -161,10 +156,19 @@ Partial Class Main
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "User ID"
         '
+        'DateFormatBox
+        '
+        Me.DateFormatBox.Location = New System.Drawing.Point(386, 12)
+        Me.DateFormatBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.DateFormatBox.Name = "DateFormatBox"
+        Me.DateFormatBox.Size = New System.Drawing.Size(90, 20)
+        Me.DateFormatBox.TabIndex = 14
+        Me.DateFormatBox.Text = "h:mm:ss tt"
+        '
         'Label2
         '
-        Me.Label2.AutoSize = true
-        Me.Label2.Location = New System.Drawing.Point(308, 13)
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(106, 14)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(102, 14)
@@ -173,7 +177,7 @@ Partial Class Main
         '
         'PCName
         '
-        Me.PCName.Location = New System.Drawing.Point(412, 11)
+        Me.PCName.Location = New System.Drawing.Point(210, 12)
         Me.PCName.Margin = New System.Windows.Forms.Padding(4)
         Me.PCName.Name = "PCName"
         Me.PCName.Size = New System.Drawing.Size(121, 20)
@@ -217,7 +221,7 @@ Partial Class Main
         '
         'Label26
         '
-        Me.Label26.AutoSize = true
+        Me.Label26.AutoSize = True
         Me.Label26.Location = New System.Drawing.Point(242, 94)
         Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
@@ -235,7 +239,7 @@ Partial Class Main
         '
         'Label25
         '
-        Me.Label25.AutoSize = true
+        Me.Label25.AutoSize = True
         Me.Label25.Location = New System.Drawing.Point(3, 92)
         Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
@@ -250,6 +254,7 @@ Partial Class Main
         Me.MaxRunText.Name = "MaxRunText"
         Me.MaxRunText.Size = New System.Drawing.Size(84, 20)
         Me.MaxRunText.TabIndex = 16
+        Me.MaxRunText.Visible = False
         '
         'FarmName
         '
@@ -259,29 +264,51 @@ Partial Class Main
         Me.FarmName.Size = New System.Drawing.Size(109, 20)
         Me.FarmName.TabIndex = 16
         '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(454, 96)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(24, 14)
+        Me.Label28.TabIndex = 15
+        Me.Label28.Text = "L/s"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(195, 95)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(24, 14)
+        Me.Label27.TabIndex = 15
+        Me.Label27.Text = "L/s"
+        '
         'Label4
         '
-        Me.Label4.AutoSize = true
+        Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(195, 64)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(42, 14)
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Hours"
+        Me.Label4.Visible = False
         '
         'Label3
         '
-        Me.Label3.AutoSize = true
+        Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(4, 64)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(85, 14)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Max Runtime"
+        Me.Label3.Visible = False
         '
         'Label10
         '
-        Me.Label10.AutoSize = true
+        Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(242, 36)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
@@ -307,7 +334,7 @@ Partial Class Main
         '
         'DeviceType
         '
-        Me.DeviceType.FormattingEnabled = true
+        Me.DeviceType.FormattingEnabled = True
         Me.DeviceType.Items.AddRange(New Object() {"Drip", "Furrow"})
         Me.DeviceType.Location = New System.Drawing.Point(102, 33)
         Me.DeviceType.Margin = New System.Windows.Forms.Padding(4)
@@ -317,7 +344,7 @@ Partial Class Main
         '
         'Label12
         '
-        Me.Label12.AutoSize = true
+        Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(4, 36)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
@@ -327,8 +354,8 @@ Partial Class Main
         '
         'DeviceTypeComboBox
         '
-        Me.DeviceTypeComboBox.FormattingEnabled = true
-        Me.DeviceTypeComboBox.Items.AddRange(New Object() {"Pump", "Flow Meter", "Valve", "Moisture Probe"})
+        Me.DeviceTypeComboBox.FormattingEnabled = True
+        Me.DeviceTypeComboBox.Items.AddRange(New Object() {"Pump", "Flow Meter", "Valve"})
         Me.DeviceTypeComboBox.Location = New System.Drawing.Point(337, 61)
         Me.DeviceTypeComboBox.Margin = New System.Windows.Forms.Padding(4)
         Me.DeviceTypeComboBox.Name = "DeviceTypeComboBox"
@@ -337,7 +364,7 @@ Partial Class Main
         '
         'Label9
         '
-        Me.Label9.AutoSize = true
+        Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(243, 64)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
@@ -347,7 +374,7 @@ Partial Class Main
         '
         'Label6
         '
-        Me.Label6.AutoSize = true
+        Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(5, 8)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
@@ -357,7 +384,7 @@ Partial Class Main
         '
         'Label7
         '
-        Me.Label7.AutoSize = true
+        Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(242, 8)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
@@ -367,25 +394,25 @@ Partial Class Main
         '
         'Edit
         '
-        Me.Edit.Font = New System.Drawing.Font("Georgia", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Edit.Font = New System.Drawing.Font("Georgia", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Edit.Location = New System.Drawing.Point(177, 162)
         Me.Edit.Margin = New System.Windows.Forms.Padding(4)
         Me.Edit.Name = "Edit"
         Me.Edit.Size = New System.Drawing.Size(77, 24)
         Me.Edit.TabIndex = 17
         Me.Edit.Text = "Edit"
-        Me.Edit.UseVisualStyleBackColor = true
+        Me.Edit.UseVisualStyleBackColor = True
         '
         'Delete
         '
-        Me.Delete.Font = New System.Drawing.Font("Georgia", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Delete.Font = New System.Drawing.Font("Georgia", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Delete.Location = New System.Drawing.Point(93, 162)
         Me.Delete.Margin = New System.Windows.Forms.Padding(4)
         Me.Delete.Name = "Delete"
         Me.Delete.Size = New System.Drawing.Size(77, 24)
         Me.Delete.TabIndex = 1
         Me.Delete.Text = "Delete"
-        Me.Delete.UseVisualStyleBackColor = true
+        Me.Delete.UseVisualStyleBackColor = True
         '
         'Add
         '
@@ -395,20 +422,20 @@ Partial Class Main
         Me.Add.Size = New System.Drawing.Size(77, 24)
         Me.Add.TabIndex = 1
         Me.Add.Text = "Add"
-        Me.Add.UseVisualStyleBackColor = true
+        Me.Add.UseVisualStyleBackColor = True
         '
         'DeviceList
         '
-        Me.DeviceList.FullRowSelect = true
-        Me.DeviceList.GridLines = true
-        Me.DeviceList.HideSelection = false
-        Me.DeviceList.LabelEdit = true
+        Me.DeviceList.FullRowSelect = True
+        Me.DeviceList.GridLines = True
+        Me.DeviceList.HideSelection = False
+        Me.DeviceList.LabelEdit = True
         Me.DeviceList.Location = New System.Drawing.Point(7, 194)
         Me.DeviceList.Margin = New System.Windows.Forms.Padding(4)
         Me.DeviceList.Name = "DeviceList"
         Me.DeviceList.Size = New System.Drawing.Size(533, 134)
         Me.DeviceList.TabIndex = 12
-        Me.DeviceList.UseCompatibleStateImageBehavior = false
+        Me.DeviceList.UseCompatibleStateImageBehavior = False
         Me.DeviceList.View = System.Windows.Forms.View.Details
         '
         'Panel6
@@ -428,7 +455,7 @@ Partial Class Main
         '
         'Label16
         '
-        Me.Label16.AutoSize = true
+        Me.Label16.AutoSize = True
         Me.Label16.Location = New System.Drawing.Point(5, 7)
         Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
@@ -444,12 +471,11 @@ Partial Class Main
         Me.Save.Size = New System.Drawing.Size(98, 33)
         Me.Save.TabIndex = 21
         Me.Save.Text = "Save"
-        Me.Save.UseVisualStyleBackColor = true
+        Me.Save.UseVisualStyleBackColor = True
         '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Location = New System.Drawing.Point(16, 66)
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabControl1.Name = "TabControl1"
@@ -460,8 +486,6 @@ Partial Class Main
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.Panel2)
-        Me.TabPage1.Controls.Add(Me.UplinkStop)
-        Me.TabPage1.Controls.Add(Me.UplinkRun)
         Me.TabPage1.Controls.Add(Me.Label23)
         Me.TabPage1.Controls.Add(Me.Label24)
         Me.TabPage1.Controls.Add(Me.UploadInterval)
@@ -475,7 +499,7 @@ Partial Class Main
         Me.TabPage1.Size = New System.Drawing.Size(545, 186)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Uplink"
-        Me.TabPage1.UseVisualStyleBackColor = true
+        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'Panel2
         '
@@ -500,7 +524,7 @@ Partial Class Main
         '
         'Label20
         '
-        Me.Label20.AutoSize = true
+        Me.Label20.AutoSize = True
         Me.Label20.Location = New System.Drawing.Point(295, 7)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
@@ -518,7 +542,7 @@ Partial Class Main
         '
         'Label19
         '
-        Me.Label19.AutoSize = true
+        Me.Label19.AutoSize = True
         Me.Label19.Location = New System.Drawing.Point(4, 7)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
@@ -526,30 +550,10 @@ Partial Class Main
         Me.Label19.TabIndex = 12
         Me.Label19.Text = "Rain Gauge Name"
         '
-        'UplinkStop
-        '
-        Me.UplinkStop.Location = New System.Drawing.Point(409, 148)
-        Me.UplinkStop.Margin = New System.Windows.Forms.Padding(4)
-        Me.UplinkStop.Name = "UplinkStop"
-        Me.UplinkStop.Size = New System.Drawing.Size(98, 33)
-        Me.UplinkStop.TabIndex = 30
-        Me.UplinkStop.Text = "Stop"
-        Me.UplinkStop.UseVisualStyleBackColor = true
-        '
-        'UplinkRun
-        '
-        Me.UplinkRun.Location = New System.Drawing.Point(293, 148)
-        Me.UplinkRun.Margin = New System.Windows.Forms.Padding(4)
-        Me.UplinkRun.Name = "UplinkRun"
-        Me.UplinkRun.Size = New System.Drawing.Size(98, 33)
-        Me.UplinkRun.TabIndex = 31
-        Me.UplinkRun.Text = "Run"
-        Me.UplinkRun.UseVisualStyleBackColor = true
-        '
         'Label23
         '
-        Me.Label23.AutoSize = true
-        Me.Label23.Location = New System.Drawing.Point(193, 151)
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(191, 156)
         Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(12, 14)
@@ -558,8 +562,8 @@ Partial Class Main
         '
         'Label24
         '
-        Me.Label24.AutoSize = true
-        Me.Label24.Location = New System.Drawing.Point(13, 151)
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(11, 156)
         Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(98, 14)
@@ -568,7 +572,7 @@ Partial Class Main
         '
         'UploadInterval
         '
-        Me.UploadInterval.Location = New System.Drawing.Point(129, 148)
+        Me.UploadInterval.Location = New System.Drawing.Point(127, 153)
         Me.UploadInterval.Margin = New System.Windows.Forms.Padding(4)
         Me.UploadInterval.Name = "UploadInterval"
         Me.UploadInterval.Size = New System.Drawing.Size(64, 20)
@@ -596,7 +600,7 @@ Partial Class Main
         Me.HisImport.Size = New System.Drawing.Size(98, 33)
         Me.HisImport.TabIndex = 30
         Me.HisImport.Text = "Import"
-        Me.HisImport.UseVisualStyleBackColor = true
+        Me.HisImport.UseVisualStyleBackColor = True
         '
         'HisEndDate
         '
@@ -618,7 +622,7 @@ Partial Class Main
         '
         'Label21
         '
-        Me.Label21.AutoSize = true
+        Me.Label21.AutoSize = True
         Me.Label21.Location = New System.Drawing.Point(204, 18)
         Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
@@ -628,7 +632,7 @@ Partial Class Main
         '
         'Label22
         '
-        Me.Label22.AutoSize = true
+        Me.Label22.AutoSize = True
         Me.Label22.Location = New System.Drawing.Point(11, 16)
         Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
@@ -638,8 +642,8 @@ Partial Class Main
         '
         'HisCheckBox
         '
-        Me.HisCheckBox.AutoSize = true
-        Me.HisCheckBox.Checked = true
+        Me.HisCheckBox.AutoSize = True
+        Me.HisCheckBox.Checked = True
         Me.HisCheckBox.CheckState = System.Windows.Forms.CheckState.Checked
         Me.HisCheckBox.Location = New System.Drawing.Point(12, 64)
         Me.HisCheckBox.Margin = New System.Windows.Forms.Padding(4)
@@ -647,75 +651,42 @@ Partial Class Main
         Me.HisCheckBox.Size = New System.Drawing.Size(113, 18)
         Me.HisCheckBox.TabIndex = 25
         Me.HisCheckBox.Text = "Historical Data"
-        Me.HisCheckBox.UseVisualStyleBackColor = true
+        Me.HisCheckBox.UseVisualStyleBackColor = True
         '
         'RainGaugeCheckBox
         '
-        Me.RainGaugeCheckBox.AutoSize = true
+        Me.RainGaugeCheckBox.AutoSize = True
         Me.RainGaugeCheckBox.Location = New System.Drawing.Point(15, 7)
         Me.RainGaugeCheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.RainGaugeCheckBox.Name = "RainGaugeCheckBox"
         Me.RainGaugeCheckBox.Size = New System.Drawing.Size(93, 18)
         Me.RainGaugeCheckBox.TabIndex = 14
         Me.RainGaugeCheckBox.Text = "Rain Gauge"
-        Me.RainGaugeCheckBox.UseVisualStyleBackColor = true
+        Me.RainGaugeCheckBox.UseVisualStyleBackColor = True
         '
-        'TabPage2
+        'UplinkStop
         '
-        Me.TabPage2.Controls.Add(Me.Panel4)
-        Me.TabPage2.Controls.Add(Me.Label5)
-        Me.TabPage2.Controls.Add(Me.DownlinkStop)
-        Me.TabPage2.Controls.Add(Me.DownlinkRun)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 23)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabPage2.Size = New System.Drawing.Size(545, 186)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Downlink"
-        Me.TabPage2.UseVisualStyleBackColor = true
+        Me.UplinkStop.Location = New System.Drawing.Point(245, 632)
+        Me.UplinkStop.Margin = New System.Windows.Forms.Padding(4)
+        Me.UplinkStop.Name = "UplinkStop"
+        Me.UplinkStop.Size = New System.Drawing.Size(98, 33)
+        Me.UplinkStop.TabIndex = 30
+        Me.UplinkStop.Text = "Stop"
+        Me.UplinkStop.UseVisualStyleBackColor = True
         '
-        'Panel4
+        'UplinkRun
         '
-        Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Location = New System.Drawing.Point(9, 20)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(531, 98)
-        Me.Panel4.TabIndex = 16
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = true
-        Me.Label5.Location = New System.Drawing.Point(6, 2)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 14)
-        Me.Label5.TabIndex = 15
-        '
-        'DownlinkStop
-        '
-        Me.DownlinkStop.Location = New System.Drawing.Point(118, 131)
-        Me.DownlinkStop.Margin = New System.Windows.Forms.Padding(4)
-        Me.DownlinkStop.Name = "DownlinkStop"
-        Me.DownlinkStop.Size = New System.Drawing.Size(98, 33)
-        Me.DownlinkStop.TabIndex = 1
-        Me.DownlinkStop.Text = "Stop"
-        Me.DownlinkStop.UseVisualStyleBackColor = true
-        '
-        'DownlinkRun
-        '
-        Me.DownlinkRun.Location = New System.Drawing.Point(13, 131)
-        Me.DownlinkRun.Margin = New System.Windows.Forms.Padding(4)
-        Me.DownlinkRun.Name = "DownlinkRun"
-        Me.DownlinkRun.Size = New System.Drawing.Size(98, 33)
-        Me.DownlinkRun.TabIndex = 18
-        Me.DownlinkRun.Text = "Run"
-        Me.DownlinkRun.UseVisualStyleBackColor = true
+        Me.UplinkRun.Location = New System.Drawing.Point(129, 632)
+        Me.UplinkRun.Margin = New System.Windows.Forms.Padding(4)
+        Me.UplinkRun.Name = "UplinkRun"
+        Me.UplinkRun.Size = New System.Drawing.Size(98, 33)
+        Me.UplinkRun.TabIndex = 31
+        Me.UplinkRun.Text = "Run"
+        Me.UplinkRun.UseVisualStyleBackColor = True
         '
         'Label11
         '
-        Me.Label11.AutoSize = true
+        Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(4, 31)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
@@ -724,7 +695,7 @@ Partial Class Main
         '
         'Label14
         '
-        Me.Label14.AutoSize = true
+        Me.Label14.AutoSize = True
         Me.Label14.Location = New System.Drawing.Point(4, 57)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
@@ -733,7 +704,7 @@ Partial Class Main
         '
         'Label8
         '
-        Me.Label8.AutoSize = true
+        Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(74, 12)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
@@ -755,14 +726,14 @@ Partial Class Main
         Me.WeekDayStart.Location = New System.Drawing.Point(74, 29)
         Me.WeekDayStart.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.WeekDayStart.Name = "WeekDayStart"
-        Me.WeekDayStart.ShowUpDown = true
+        Me.WeekDayStart.ShowUpDown = True
         Me.WeekDayStart.Size = New System.Drawing.Size(78, 20)
         Me.WeekDayStart.TabIndex = 16
         Me.WeekDayStart.Value = New Date(2018, 9, 12, 21, 0, 0, 0)
         '
         'Label17
         '
-        Me.Label17.AutoSize = true
+        Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(258, 31)
         Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
@@ -771,7 +742,7 @@ Partial Class Main
         '
         'Label15
         '
-        Me.Label15.AutoSize = true
+        Me.Label15.AutoSize = True
         Me.Label15.Location = New System.Drawing.Point(158, 12)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
@@ -785,7 +756,7 @@ Partial Class Main
         Me.WeekEndsStart.Location = New System.Drawing.Point(157, 29)
         Me.WeekEndsStart.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.WeekEndsStart.Name = "WeekEndsStart"
-        Me.WeekEndsStart.ShowUpDown = true
+        Me.WeekEndsStart.ShowUpDown = True
         Me.WeekEndsStart.Size = New System.Drawing.Size(78, 20)
         Me.WeekEndsStart.TabIndex = 16
         Me.WeekEndsStart.Value = New Date(2018, 9, 12, 0, 0, 0, 0)
@@ -797,7 +768,7 @@ Partial Class Main
         Me.WeekDayEnd.Location = New System.Drawing.Point(74, 54)
         Me.WeekDayEnd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.WeekDayEnd.Name = "WeekDayEnd"
-        Me.WeekDayEnd.ShowUpDown = true
+        Me.WeekDayEnd.ShowUpDown = True
         Me.WeekDayEnd.Size = New System.Drawing.Size(78, 20)
         Me.WeekDayEnd.TabIndex = 16
         Me.WeekDayEnd.Value = New Date(2018, 9, 12, 7, 0, 0, 0)
@@ -809,14 +780,14 @@ Partial Class Main
         Me.WeekEndsEnd.Location = New System.Drawing.Point(157, 54)
         Me.WeekEndsEnd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.WeekEndsEnd.Name = "WeekEndsEnd"
-        Me.WeekEndsEnd.ShowUpDown = true
+        Me.WeekEndsEnd.ShowUpDown = True
         Me.WeekEndsEnd.Size = New System.Drawing.Size(78, 20)
         Me.WeekEndsEnd.TabIndex = 16
         Me.WeekEndsEnd.Value = New Date(2018, 9, 12, 23, 59, 0, 0)
         '
         'Label18
         '
-        Me.Label18.AutoSize = true
+        Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(451, 31)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
@@ -825,15 +796,13 @@ Partial Class Main
         '
         'Update
         '
-        Me.Update.Enabled = false
         Me.Update.Location = New System.Drawing.Point(475, 633)
         Me.Update.Margin = New System.Windows.Forms.Padding(4)
         Me.Update.Name = "Update"
         Me.Update.Size = New System.Drawing.Size(98, 33)
         Me.Update.TabIndex = 24
         Me.Update.Text = "Update"
-        Me.Update.UseVisualStyleBackColor = true
-        Me.Update.Visible = false
+        Me.Update.UseVisualStyleBackColor = True
         '
         'StatusStrip1
         '
@@ -852,73 +821,42 @@ Partial Class Main
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(119, 17)
         Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(126, 633)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(98, 33)
-        Me.Button1.TabIndex = 26
-        Me.Button1.Text = "Auto Start"
-        Me.Button1.UseVisualStyleBackColor = true
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = true
-        Me.Label27.Location = New System.Drawing.Point(195, 95)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(24, 14)
-        Me.Label27.TabIndex = 15
-        Me.Label27.Text = "L/s"
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = true
-        Me.Label28.Location = New System.Drawing.Point(454, 96)
-        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(24, 14)
-        Me.Label28.TabIndex = 15
-        Me.Label28.Text = "L/s"
-        '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7!, 14!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(581, 697)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.UplinkStop)
+        Me.Controls.Add(Me.UplinkRun)
         Me.Controls.Add(Me.Update)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Save)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel1)
-        Me.Font = New System.Drawing.Font("Georgia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Font = New System.Drawing.Font("Georgia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
-        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.MaximizeBox = false
+        Me.MaximizeBox = False
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Uplink Configuration"
-        Me.Panel1.ResumeLayout(false)
-        Me.Panel1.PerformLayout
-        Me.Panel3.ResumeLayout(false)
-        Me.Panel3.PerformLayout
-        Me.Panel6.ResumeLayout(false)
-        Me.Panel6.PerformLayout
-        Me.TabControl1.ResumeLayout(false)
-        Me.TabPage1.ResumeLayout(false)
-        Me.TabPage1.PerformLayout
-        Me.Panel2.ResumeLayout(false)
-        Me.Panel2.PerformLayout
-        Me.Panel5.ResumeLayout(false)
-        Me.Panel5.PerformLayout
-        Me.TabPage2.ResumeLayout(false)
-        Me.TabPage2.PerformLayout
-        Me.StatusStrip1.ResumeLayout(false)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout
         Me.ResumeLayout(false)
         Me.PerformLayout
@@ -972,10 +910,6 @@ End Sub
     Friend WithEvents UplinkStop As Button
     Friend WithEvents UplinkRun As Button
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents Label5 As Label
-    Friend WithEvents DownlinkStop As Button
-    Friend WithEvents DownlinkRun As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label8 As Label
@@ -990,12 +924,11 @@ End Sub
     Friend WithEvents Update As Button
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Panel4 As Panel
     Friend WithEvents MaxThreshold As TextBox
     Friend WithEvents Label26 As Label
     Friend WithEvents MinThreshold As TextBox
     Friend WithEvents Label25 As Label
     Friend WithEvents Label28 As Label
     Friend WithEvents Label27 As Label
+    Friend WithEvents Button1 As Button
 End Class

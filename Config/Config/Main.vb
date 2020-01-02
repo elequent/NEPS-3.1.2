@@ -4,7 +4,6 @@ Imports System.Net
 Imports IWshRuntimeLibrary
 Imports Shell32
 Public Class Main
-
     'divide string to substrings
     'str: input string
     'length: string length
@@ -22,17 +21,17 @@ Public Class Main
         Next
     End Sub
     'find downlink program
-    Private Sub FindDownlink()
-        Dim files() As String
-        files = Directory.GetFiles(Directory.GetCurrentDirectory(), "*.exe", SearchOption.TopDirectoryOnly)
-        For Each FileName As String In files
-            Dim str As String = FileName.Substring(FileName.Length - 17, 8)
-            If str = "Downlink" Then
-                DownlinkName = FileName.Substring(FileName.Length - 17, 13)
-                'MsgBox(FileName.Substring(FileName.Length - 17, 13))
-            End If
-        Next
-    End Sub
+    'Private Sub FindDownlink()
+    '    Dim files() As String
+    '    files = Directory.GetFiles(Directory.GetCurrentDirectory(), "*.exe", SearchOption.TopDirectoryOnly)
+    '    For Each FileName As String In files
+    '        Dim str As String = FileName.Substring(FileName.Length - 17, 8)
+    '        If str = "Downlink" Then
+    '            DownlinkName = FileName.Substring(FileName.Length - 17, 13)
+    '            'MsgBox(FileName.Substring(FileName.Length - 17, 13))
+    '        End If
+    '    Next
+    'End Sub
     Private Function Divide(ByVal str As String, ByVal length As Integer, ByVal sep As String) As String()
         Dim Arr() As String
         ReDim Arr(length)
@@ -130,22 +129,29 @@ Public Class Main
             System.IO.Directory.CreateDirectory(path + "\Rainfall\")
         End If
     End Sub
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        FindUplink()
-        FindDownlink()
-        ToolStripStatusLabel1.Text = "Uplink Version: " + UplinkName
-        CreateFolder()
+    Private Sub UpdateList()
         DeviceList.Columns.Add("ID", 40)
         DeviceList.Columns.Add("Group", 60)
         DeviceList.Columns.Add("Type", 110)
         DeviceList.Columns.Add("Irrig Type", 80)
         DeviceList.Columns.Add("Farm Name", 120)
-        DeviceList.Columns.Add("Max Runtime (Hour)", 160)
+        DeviceList.Columns.Add("Max Runtime (Hour)", 0)
         DeviceList.Columns.Add("Min Threshold (l/s)", 160)
         DeviceList.Columns.Add("Max Threshold (l/s)", 160)
+    End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FindUplink()
+        'FindDownlink()
+        CheckUplink()
+        ToolStripStatusLabel1.Text = "Current Version: " + UplinkName + ".     Latest Version: " + LatestUplinkName
+        CreateFolder()
+        UpdateList()
+        'Run()
+        'DateFormatBox.Text = TimeFormat
 
         ReadConfig()
         AddList()
+        SetStartUp()
 
         'Run()
         'DateFormatBox.Text = "HH:mm:ss"
@@ -166,9 +172,9 @@ Public Class Main
             Case "2"
                 arr(2) = "Valve"
                 Exit Select
-            Case "3"
-                arr(2) = "Moisture Probe"
-                Exit Select
+                'Case "3"
+                '    arr(2) = "Moisture Probe"
+                '    Exit Select
         End Select
         Select Case DeviceType.SelectedIndex
             Case "0"
@@ -293,19 +299,19 @@ Public Class Main
                     arr(1) = GroupID
                     arr(3) = Type
                     arr(4) = FarmName
-                    If Type = "Drip" Then
-                        arr(5) = "N/A"
-                        arr(6) = "N/A"
-                        arr(7) = "N/A"
-                    Else
-                        If i < lines.Length - 2 Then
-                            If lines(i + 1) <> "" Then
-                                arr(5) = ConvertToInt(Divide(lines(i + 1), 2, "=")(1))
-                                arr(6) = ConvertToInt(Divide(lines(i + 2), 2, "=")(1))
-                                arr(7) = ConvertToInt(Divide(lines(i + 3), 2, "=")(1))
-                            End If
-                        End If
-                    End If
+                    'If Type = "Drip" Then
+                    '    arr(5) = ConvertToInt(Divide(lines(i + 1), 2, "=")(1))
+                    '    arr(6) = ConvertToInt(Divide(lines(i + 2), 2, "=")(1))
+                    '    arr(7) = ConvertToInt(Divide(lines(i + 3), 2, "=")(1))
+                    'Else
+                    '    If i < lines.Length - 2 Then
+                    '        If lines(i + 1) <> "" Then
+                    arr(5) = ConvertToInt(Divide(lines(i + 1), 2, "=")(1))
+                    arr(6) = ConvertToInt(Divide(lines(i + 2), 2, "=")(1))
+                    arr(7) = ConvertToInt(Divide(lines(i + 3), 2, "=")(1))
+                    '        End If
+                    '    End If
+                    'End If
                     itm = New ListViewItem(arr)
                     DeviceList.Items.Add(itm)
                 End If
@@ -431,14 +437,14 @@ Public Class Main
         End Using
         SaveFlag = 1
     End Sub
-    Private Sub StopDownlink(sender As Object, e As EventArgs) Handles DownlinkStop.Click
+    Private Sub StopDownlink(sender As Object, e As EventArgs)
         For Each prog As Process In Process.GetProcesses
             If prog.ProcessName = DownlinkName Then
                 prog.Kill()
             End If
         Next
     End Sub
-    Private Sub RunDownlink(sender As Object, e As EventArgs) Handles DownlinkRun.Click
+    Private Sub RunDownlink(sender As Object, e As EventArgs)
         AddList()
         Count()
         WriteFile()
@@ -497,14 +503,16 @@ Public Class Main
     End Sub
     'check and update uplink program
     Private Sub Update_Click(sender As Object, e As EventArgs) Handles Update.Click
-        CheckUplink()
+        UpdateUplink()
+        ToolStripStatusLabel1.Text = "Current Version: " + UplinkName + ".     Latest Version: " + LatestUplinkName
     End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    'set Uplink as a startup program
+    Private Sub SetStartUp()
         Create_ShortCut(Apppath + UplinkName + ".exe", Apppath, UplinkName, "", 6, 0)
         Dim dir As String = Environment.GetFolderPath(Environment.SpecialFolder.Startup)
-        File.Copy(Apppath + UplinkName + ".lnk", dir + UplinkName + ".lnk", True)
-        MsgBox(UplinkName + " will automatically start with windows.")
+        File.Copy(Apppath + UplinkName + ".lnk", dir + "\" + UplinkName + ".lnk", True)
+        File.Delete(Apppath + UplinkName + ".lnk")
+        'MsgBox(UplinkName + " will automatically start with windows.")
     End Sub
     Private Sub Create_ShortCut(ByVal TargetPath As String, ByVal ShortCutPath As String, ByVal ShortCutname As String, ByVal WorkPath As String, ByVal Window_Style As Integer, ByVal IconNum As Integer)
         Dim VbsObj As Object
@@ -517,5 +525,9 @@ Public Class Main
         MyShortcut.WindowStyle = Window_Style
         MyShortcut.IconLocation = TargetPath & "," & IconNum
         MyShortcut.Save()
+    End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Run()
+        DateFormatBox.Text = TimeFormat
     End Sub
 End Class

@@ -4,12 +4,12 @@ Site Key=81
 [Farm Information]
 Computer Name=Aaron
 No. Hydro Group=3
-DateTime Format=H:mm:ss
+DateTime Format=h:mm:ss tt
 
 [Historical Data]
 Enable=0
-Start Date=8/02/2018 7:18:18 PM
-End Date=22/02/2018 7:18:18 PM
+Start Date=24/12/2018 7:18:18 PM
+End Date=28/12/2018 7:18:18 PM
 
 [Rain Gauge]
 Has Rain Gauge=1
@@ -38,12 +38,20 @@ No. Moisture Probe=0
 No. Set=4
 Set ID=11
 Max Runtime=0
+Min Threshold=0
+Max Threshold=0
 Set ID=12
 Max Runtime=0
+Min Threshold=0
+Max Threshold=0
 Set ID=13
 Max Runtime=0
+Min Threshold=0
+Max Threshold=0
 Set ID=75
 Max Runtime=0
+Min Threshold=0
+Max Threshold=0
 
 [Hydr Group C]
 Hydr Grp ID=C
@@ -58,22 +66,40 @@ Moisture Probe ID=115
 No. Set=9
 Set ID=90
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 Set ID=91
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 Set ID=102
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 Set ID=81
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 Set ID=82
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 Set ID=94
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 Set ID=95
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 Set ID=98
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 Set ID=99
 Max Runtime=10
+Min Threshold=0
+Max Threshold=0
 
 [Hydr Group D]
 Hydr Grp ID=D
@@ -88,6 +114,10 @@ Moisture Probe ID=122
 No. Set=2
 Set ID=86
 Max Runtime=6
+Min Threshold=0
+Max Threshold=0
 Set ID=87
 Max Runtime=6
+Min Threshold=0
+Max Threshold=0
 

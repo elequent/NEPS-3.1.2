@@ -69,3 +69,34 @@ C:\Users\AbbyEric\OneDrive - James Cook University\Irrigation\Program\Combined T
 C:\Users\AbbyEric\OneDrive - James Cook University\Irrigation\Program\Combined Test\Combined\Config.application
 C:\Users\AbbyEric\OneDrive - James Cook University\Irrigation\Program\Combined Test\Combined\Config.exe
 C:\Users\AbbyEric\OneDrive - James Cook University\Irrigation\Program\Combined Test\Config_Uplink - Copy\Config\obj\x86\Release\Config.vbprojAssemblyReference.cache
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Combined\Data\Temp\nxSQLExec.exe
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Combined\Config.exe.config
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Combined\Config.exe.manifest
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Combined\Config.application
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Combined\Config.exe
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\obj\x86\Release\Config.Main.resources
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\obj\x86\Release\Config.Resources.resources
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\obj\x86\Release\Config.vbproj.GenerateResource.cache
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\obj\x86\Release\Config.vbproj.CoreCompileInputs.cache
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\obj\x86\Release\Config.exe.manifest
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\obj\x86\Release\Config.application
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\obj\x86\Release\Config.exe
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\bin\x86\Release\Data\Temp\nxSQLExec.exe
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\bin\x86\Release\Config.exe.config
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\bin\x86\Release\Config.exe.manifest
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\bin\x86\Release\Config.application
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\bin\x86\Release\Config.exe
+C:\Users\ericw\Downloads\OneDrive_2019-11-04 (1)\Config_Uplink - Copy\Config\obj\x86\Release\Config.vbprojAssemblyReference.cache
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\bin\x86\Release\Data\Temp\nxSQLExec.exe
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\bin\x86\Release\Config.exe.config
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\bin\x86\Release\Config.exe.manifest
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\bin\x86\Release\Config.application
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\bin\x86\Release\Config.exe
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\obj\x86\Release\Config.vbprojAssemblyReference.cache
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\obj\x86\Release\Config.Main.resources
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\obj\x86\Release\Config.Resources.resources
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\obj\x86\Release\Config.vbproj.GenerateResource.cache
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\obj\x86\Release\Config.vbproj.CoreCompileInputs.cache
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\obj\x86\Release\Config.exe.manifest
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\obj\x86\Release\Config.application
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Config\Config\obj\x86\Release\Config.exe

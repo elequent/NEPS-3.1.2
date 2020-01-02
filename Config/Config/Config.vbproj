@@ -81,7 +81,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <DefineTrace>false</DefineTrace>
-    <OutputPath>..\..\Combined\</OutputPath>
+    <OutputPath>bin\x86\Release\</OutputPath>
     <DocumentationFile>
     </DocumentationFile>
     <Optimize>false</Optimize>
@@ -137,6 +137,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateTimeTest.vb" />
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>

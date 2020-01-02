@@ -5,6 +5,7 @@ Module Variables
     Public path As String = Apppath + "Data\"        'Current program path
     Public fileconfig As String = Apppath + "Data\Config.txt"        'Current program path
     Public UplinkName As String      'Uplink program name
+    Public LatestUplinkName As String      'Latest Uplink program name
     Public DownlinkName As String     'Downlink program name
     Public Apppath As String = Directory.GetCurrentDirectory() + "\"        'Current program path
 
