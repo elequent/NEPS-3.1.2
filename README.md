@@ -1,5 +1,0 @@
-# NESP 3.1.2 Improving water quality for the Great Barrier Reef and wetlands by better managing irrigation in the sugarcane farming system
-
-In pursuit of delivering multiple benefits across multiple ecosystems such as freshwater estuaries, wetlands and reefs, this project will work in partnership with industry, extension, NRM, research and government organizations to develop and deploy an irrigation system that is automatically controlled by remotely accessing feedback from the IrrigWeb decision support tool. IrrigWeb provides optimal irrigation schedules on a paddock-by-paddock basis by linking information about climate, soils and management regimes. If new water quality targets as specified in the revised Burdekin Water Quality Improvement Plan are to be met by 2025, it will be critical to establish pathways that enable industry partners to capitalize on new technologies.
-
-The program in this project only works with WiSA system and IrrigWeb platform. Please make sure you have the two platforms set-up correcly before using the program. A more comprehensive step-by-step set-up procedure is under development.

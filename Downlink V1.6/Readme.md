@@ -1,1 +1,0 @@
-The downlink program is developed to automatically pull the irrigation schedule file from IrrigWeb and calculate the irrigation time configuration for each irrigation set. The downlink program then applies the updated irrigation schedule to Aqualink to automate the irrigation.
