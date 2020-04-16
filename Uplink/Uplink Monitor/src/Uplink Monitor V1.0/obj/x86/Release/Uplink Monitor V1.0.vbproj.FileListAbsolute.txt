@@ -1,0 +1,26 @@
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Uplink Monitor V1.0.exe.config
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Uplink Monitor V1.0.exe
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Uplink Monitor V1.0.pdb
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Uplink Monitor V1.0.xml
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink_Monitor_V1._0.Resources.resources
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.vbproj.GenerateResource.cache
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.vbproj.CoreCompileInputs.cache
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.exe
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.xml
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.pdb
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink_Monitor_V1._0.Main.resources
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Emails.dat
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Names.dat
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Emails.dat
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Names.dat
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Uplink Monitor V1.0.exe.config
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Uplink Monitor V1.0.exe
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Uplink Monitor V1.0.pdb
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Release\Uplink Monitor V1.0.xml
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink_Monitor_V1._0.Main.resources
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink_Monitor_V1._0.Resources.resources
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.vbproj.GenerateResource.cache
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.vbproj.CoreCompileInputs.cache
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.exe
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.xml
+C:\Users\ericw\Dropbox\i Team\Eric's work\Source Codes\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Release\Uplink Monitor V1.0.pdb

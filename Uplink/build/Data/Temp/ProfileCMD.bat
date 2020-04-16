@@ -1,0 +1,1 @@
+nxSQLExec /Alias:ALConf /SQLFile:ProfileSQL.txt /ResultFile:Profile.txt

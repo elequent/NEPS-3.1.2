@@ -1,0 +1,13 @@
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Debug\Emails.txt
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Debug\Names.txt
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Debug\Uplink Monitor V1.0.exe.config
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Debug\Uplink Monitor V1.0.exe
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Debug\Uplink Monitor V1.0.pdb
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\bin\x86\Debug\Uplink Monitor V1.0.xml
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Debug\Uplink_Monitor_V1._0.Main.resources
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Debug\Uplink_Monitor_V1._0.Resources.resources
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Debug\Uplink Monitor V1.0.vbproj.GenerateResource.cache
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Debug\Uplink Monitor V1.0.vbproj.CoreCompileInputs.cache
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Debug\Uplink Monitor V1.0.exe
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Debug\Uplink Monitor V1.0.xml
+C:\Users\ericw\source\repos\Uplink Monitor V1.0\Uplink Monitor V1.0\obj\x86\Debug\Uplink Monitor V1.0.pdb
