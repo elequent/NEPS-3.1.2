@@ -1,0 +1,3 @@
+Group|Start|End|Set|Irrig (mm)
+Drip|20/01 2105|21/01/20 0405 |D2|8
+Drip|20/01 2105|20/01/20 2330 |D4|3

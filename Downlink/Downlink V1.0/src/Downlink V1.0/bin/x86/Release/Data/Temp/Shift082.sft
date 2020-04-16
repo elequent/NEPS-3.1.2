@@ -1,0 +1,59 @@
+[Version Info]
+Version Number=1.3.0
+
+[Shift Details]
+Shift Name=D4
+Shift Enabled=1
+Hydraulic Group=2
+Repeatable=1
+
+[Probe Details]
+Start on Moisture=0
+No Start Probes=0
+
+[Probe Stop Details]
+Stop on Moisture=0
+Stop on Moisture Difference=0
+Stop Moisture Difference Value=50
+No Stop Probes=0
+
+[Valve Details]
+Inter Valve Delay=10
+Reverse order Shutdown=1
+use Valve Runtimes=0
+Enforce Min Flow=0
+Enforce Max Flow=0
+Shift Runtime=8700
+Number of Shift Valves=1
+Valve 1 UID=75
+Valve 1 RunTime=8700
+Valve 1 HasRun=0
+Valve 1 HasOpn=1
+Valve 1 Secs2Run=0
+Scale Runtime on Previous=0
+
+[Volume Stop Details]
+Max Volume=0
+Flow Meter UID=0
+
+[Pump Details]
+No Shift Pumps=1
+Pump 1 UID=14
+
+[Booster Pump Details]
+No Booster Pumps=0
+
+[Injector Details]
+No Shift Injectors=0
+
+[Date Information]
+Last Day Run=0
+Last Hour Run=0
+Exit Status=
+Modified=43850.6222222222
+
+[Setpoint Sensor Details]
+No of Setpoints=1
+Sensor 0 UID=69
+Value 0=32
+Delay Time 0=0

@@ -1,0 +1,52 @@
+[Site Key]
+Site Key=21
+
+[Farm Information]
+Computer Name=Aaron
+No. Hydro Group=1
+DateTime Format=h:mm:ss tt
+
+[Historical Data]
+Enable=0
+Start Date=11/02/2019 7:18:18 PM
+End Date=17/02/2019 7:18:18 PM
+
+[Rain Gauge]
+Has Rain Gauge=1
+Rain Gauge Name=Aaron's Shed
+Rain Gauge ID=119
+
+[Update Interval]
+Update Interval=1
+
+[Irrigation Interval]
+Irrigation Interval=300
+
+[Preferred Time]
+Weekdays=9:00 PM-7:00 AM
+Weekends=7:00 AM-7:00 AM
+
+[Hydr Group B]
+Hydr Grp ID=B
+Farm Name=Aaron's Farm
+Irrig Type=Drip
+No. Pump=1
+Pump ID=14
+No. Flow Meter=1
+Flow Meter ID=4
+No. Moisture Probe=0
+No. Set=4
+Set ID=11
+Max Runtime=0
+Ratoon=FAL
+Set ID=12
+Max Runtime=0
+Ratoon=R2
+Set ID=13
+Max Runtime=0
+Ratoon=R1
+Set ID=75
+Max Runtime=0
+Ratoon=P
+
+

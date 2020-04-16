@@ -1,0 +1,36 @@
+[Version Info]
+Version Number=1.3.0
+
+[Cycle Details]
+Cycle Name=D4
+Cycle Enabled=1
+Cycle Paused=0
+Cycle Ident=
+Cycle Type=1
+Idle Time=0
+Merge Valves=1
+Merge Open Valve First=1
+Shift Factor=100
+Hydraulic Group=1
+Protection Shifts=none
+Ignore Old Schedules=1
+Delete Old Schedules=0
+Delete Old Schedules Time=14
+Ignore Old Schedules=1
+Schedule Old Repeats=0
+Schedule Count=1
+
+[Date Information]
+Last Run Time=0
+Exit Status=
+Modified=43850.6222222222
+
+[Schedule 0]
+Schedule Name=
+Start Time=43850.8784722222
+Stop Time=43850.8784722222
+Loop Shifts=0
+Repeat Time=0
+Last Repeat Time=0
+Shifts=82
+Has Ran=0

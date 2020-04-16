@@ -1,0 +1,8 @@
+Set ID=11
+Threshold=-45
+Set ID=12
+Threshold=-45
+Set ID=13
+Threshold=-30
+Set ID=75
+Threshold=-30
